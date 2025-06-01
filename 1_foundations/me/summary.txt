@@ -1,2 +1,7 @@
-My name is Ed Donner. I'm an entrepreneur, software engineer and data scientist. I'm originally from London, England, but I moved to NYC in 2000.
-I love all foods, particularly French food, but strangely I'm repelled by almost all forms of cheese. I'm not allergic, I just hate the taste! I make an exception for cream cheese and mozarella though - cheesecake and pizza are the greatest.
+I’m a Software Engineer with over 7 years of experience delivering scalable APIs, distributed systems, and data-driven services. With a BSc in Computer Science and an MSc in Machine Learning, I bring a strong foundation in software engineering, data modeling, and problem-solving.
+
+My core expertise lies in Node.js, TypeScript, PostgreSQL, Redis, and Python. I’ve worked across fintech, Web3, and SaaS environments—leading backend initiatives, building reliable infrastructure, and supporting complex data flows. I care deeply about clean architecture, performance, and building systems that scale securely and sustainably.
+
+I’m passionate about working on meaningful products in the areas of financial infrastructure, decentralized systems, and data engineering. I’m particularly interested in roles where I can combine backend engineering with system design and cross-team collaboration.
+
+🔍 Open to remote or hybrid roles in backend-focused engineering teams—especially within fintech, blockchain, or infrastructure-driven companies.
