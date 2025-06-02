@@ -10,7 +10,8 @@ import gradio as gr
 load_dotenv(override=True)
 
 
-def push(text):
+def push_pushover(text):
+    print(f"Pushing to Pushover: {text}")
     requests.post(
         "https://api.pushover.net/1/messages.json",
         data={
@@ -19,6 +20,23 @@ def push(text):
             "message": text,
         },
     )
+
+
+def push_telegram(text):
+    print(f"Pushing to Telegram: {text}")
+    requests.post(
+        f"https://api.telegram.org/bot{os.getenv('TELEGRAM_BOT_TOKEN')}/sendMessage",
+        data={"chat_id": os.getenv("TELEGRAM_CHAT_ID"), "text": text},
+    )
+
+
+def push(text):
+    if os.getenv("TELEGRAM_BOT_TOKEN") and os.getenv("TELEGRAM_CHAT_ID"):
+        push_telegram(text)
+    elif os.getenv("PUSHOVER_TOKEN") and os.getenv("PUSHOVER_USER"):
+        push_pushover(text)
+    else:
+        print(f"No push notification service configured: {text}")
 
 
 def record_user_details(email, name="Name not provided", notes="not provided"):
